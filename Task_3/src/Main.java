@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         ArrayList<Integer> numbers = input();
-        calc_and_output(numbers);
+        calcAndOutput(numbers);
     }
 
     public static ArrayList<Integer> input() {
@@ -17,7 +17,7 @@ public class Main {
         return numbers;
     }
 
-    public static void calc_and_output(ArrayList<Integer> numbers) {
+    public static void calcAndOutput(ArrayList<Integer> numbers) {
         numbers.stream()
                 .filter(num -> num % 3 == 0)
                 .forEach(num -> System.out.println(num + " "));
